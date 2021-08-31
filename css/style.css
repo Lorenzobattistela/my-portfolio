@@ -1,0 +1,46 @@
+* {
+  background-color: #264653;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-numbers {
+  color: #2a9d8f;
+  font-size: 20px;
+  margin: 1em 0 0 0;
+}
+
+.menu-text {
+  color: #ccd6f6;
+  font-size: 20px;
+  margin: 1em 2em 0 0;
+}
+
+.menu-numbers:hover {
+  cursor: pointer;
+}
+.menu-text:hover {
+  color: #2a9d8f;
+  cursor: pointer;
+}
+
+.menu-button {
+  color: #2a9d8f;
+  border: 2px solid #2a9d8f;
+  border-radius: 10%;
+  padding: 1em 1.5em 1em 1.5em;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 1em 2em 0 0;
+}
+.menu-button:hover {
+  background-color: #315462;
+  cursor: pointer;
+}
