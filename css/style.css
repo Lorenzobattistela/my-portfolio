@@ -44,3 +44,96 @@ a {
   background-color: #315462;
   cursor: pointer;
 }
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 30em;
+  font-family: Calibri;
+}
+
+#text_one {
+  font-size: 1.5em;
+  color: #2a9d8f;
+  margin: 6em 0 0 0;
+  font-weight: 600;
+}
+#text_two {
+  font-size: 4.2em;
+  margin: 0;
+  color: #ccd6f6;
+}
+
+#text_three {
+  font-size: 3.4em;
+  margin: 0;
+  color: #b3b9cd;
+}
+#text_four {
+  width: 40%;
+  font-size: 1.4em;
+  margin: 1 0 0 0;
+  color: #b6c0dc;
+}
+
+#github_button {
+  color: #2a9d8f;
+  margin: 1.5em 0 0 0;
+  border: 1px solid #2a9d8f;
+  border-radius: 28px 28px 28px 28px;
+  padding: 1em 1.5em 1em 1.5em;
+  width: 20%;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 600;
+}
+
+#github_button:hover {
+  background-color: #315462;
+  cursor: pointer;
+}
+
+.social-media-wrapper {
+  left: 0;
+  position: fixed;
+  bottom: 1px;
+}
+
+ul {
+  list-style-type: none;
+}
+ul > li {
+  margin: 1em;
+}
+
+.email-wrapper {
+  top: 500px;
+  right: 10px;
+  transform: rotate(90deg);
+  position: fixed;
+}
+.mail {
+  text-decoration: none;
+  color: #ccd6f6;
+  font-size: 1.5em;
+  position: fixed;
+  left: 1px;
+}
+
+#line {
+  margin-left: 1em;
+}
+
+#line-right {
+  left: 360px;
+  top: -40px;
+  transform: rotate(90deg);
+  position: absolute;
+}
