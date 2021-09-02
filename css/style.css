@@ -137,3 +137,75 @@ ul > li {
   transform: rotate(90deg);
   position: absolute;
 }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25em;
+}
+
+.section-title-num {
+  color: #2a9d8f;
+  font-size: 2.2em;
+  margin: 0;
+  font-family: Calibri;
+}
+
+.section-title-text {
+  color: #ccd6f6;
+  font-size: 2.2em;
+  margin: 0;
+  font-family: Calibri;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 47em;
+  font-family: Calibri;
+  margin-bottom: 1em;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  margin-right: 19.7em;
+  justify-content: left;
+  width: 30%;
+  font-size: 1.2em;
+  color: #b6c0dc;
+  line-height: 1.5em;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: -2em;
+}
+
+ol {
+  list-style: none;
+}
+
+ol li::before {
+  content: "\2023";
+  color: #2a9d8f;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+#cs50 {
+  color: #2a9d8f;
+}
+#cs50:hover {
+  color: #70b3ab;
+}
+
+.photo-perfil {
+  width: 200px;
+  height: 200px;
+}
