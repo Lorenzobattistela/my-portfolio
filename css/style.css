@@ -5,6 +5,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  animation: 2s ease-in-out 0s 1 slideFromAbove;
 }
 
 a {
@@ -49,6 +50,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: 2s ease-in-out 0s 1 slideFromAbove2;
 }
 
 .text {
@@ -104,6 +106,7 @@ a {
   left: 0;
   position: fixed;
   bottom: 1px;
+  animation: 3s ease-in-out 0s 1 disappearAndAppear;
 }
 
 ul {
@@ -118,6 +121,7 @@ ul > li {
   right: 10px;
   transform: rotate(90deg);
   position: fixed;
+  animation: 3s ease-in-out 0s 1 disappearAndAppear;
 }
 .mail {
   text-decoration: none;
@@ -206,6 +210,39 @@ ol li::before {
 }
 
 .photo-perfil {
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
+  float: right;
+  position: relative;
+  right: 26em;
+  bottom: 26em;
+  border-radius: 20px;
+}
+
+@keyframes disappearAndAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromAbove {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideFromAbove2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
