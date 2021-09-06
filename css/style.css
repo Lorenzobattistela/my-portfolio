@@ -1,248 +1,79 @@
-* {
+body {
   background-color: #264653;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  animation: 2s ease-in-out 0s 1 slideFromAbove;
+.logo {
+  width: 100px;
+  height: 100px;
 }
 
-a {
-  text-decoration: none;
+.header {
+  background-color: #212529;
+}
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
 }
 
-.menu-numbers {
+nav {
+  margin-bottom: 10em;
+}
+
+.navbar-toggler {
+  margin-right: 1em !important;
+}
+
+.resume {
+  background-color: none;
+  border: solid 3px #2a9d8f;
   color: #2a9d8f;
-  font-size: 20px;
-  margin: 1em 0 0 0;
+}
+.resume:hover {
+  background-color: #50cebf;
 }
 
-.menu-text {
+section > div > h3 {
+  color: #2a9d8f;
+  font-size: 1.2vmax;
+}
+
+section > div > h1.name {
   color: #ccd6f6;
-  font-size: 20px;
-  margin: 1em 2em 0 0;
+  font-size: 3.5vmax;
 }
 
-.menu-numbers:hover {
-  cursor: pointer;
-}
-.menu-text:hover {
-  color: #2a9d8f;
-  cursor: pointer;
-}
-
-.menu-button {
-  color: #2a9d8f;
-  border: 2px solid #2a9d8f;
-  border-radius: 10%;
-  padding: 1em 1.5em 1em 1.5em;
-  font-size: 14px;
-  font-weight: bold;
-  margin: 1em 2em 0 0;
-}
-.menu-button:hover {
-  background-color: #315462;
-  cursor: pointer;
-}
-
-.presentation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: 2s ease-in-out 0s 1 slideFromAbove2;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-left: 30em;
-  font-family: Calibri;
-}
-
-#text_one {
-  font-size: 1.5em;
-  color: #2a9d8f;
-  margin: 6em 0 0 0;
-  font-weight: 600;
-}
-#text_two {
-  font-size: 4.2em;
-  margin: 0;
-  color: #ccd6f6;
-}
-
-#text_three {
-  font-size: 3.4em;
-  margin: 0;
+section > div > h1.desc {
   color: #b3b9cd;
-}
-#text_four {
-  width: 40%;
-  font-size: 1.4em;
-  margin: 1 0 0 0;
-  color: #b6c0dc;
+  font-size: 3vmax;
 }
 
-#github_button {
-  color: #2a9d8f;
-  margin: 1.5em 0 0 0;
-  border: 1px solid #2a9d8f;
-  border-radius: 28px 28px 28px 28px;
-  padding: 1em 1.5em 1em 1.5em;
-  width: 20%;
-  font-size: 1.2em;
-  text-align: center;
-  font-weight: 600;
-}
-
-#github_button:hover {
-  background-color: #315462;
-  cursor: pointer;
-}
-
-.social-media-wrapper {
-  left: 0;
-  position: fixed;
-  bottom: 1px;
-  animation: 3s ease-in-out 0s 1 disappearAndAppear;
-}
-
-ul {
-  list-style-type: none;
-}
-ul > li {
-  margin: 1em;
-}
-
-.email-wrapper {
-  top: 500px;
-  right: 10px;
-  transform: rotate(90deg);
-  position: fixed;
-  animation: 3s ease-in-out 0s 1 disappearAndAppear;
-}
-.mail {
-  text-decoration: none;
-  color: #ccd6f6;
-  font-size: 1.5em;
-  position: fixed;
-  left: 1px;
-}
-
-#line {
-  margin-left: 1em;
-}
-
-#line-right {
-  left: 360px;
-  top: -40px;
-  transform: rotate(90deg);
-  position: absolute;
-}
-
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 25em;
-}
-
-.section-title-num {
-  color: #2a9d8f;
-  font-size: 2.2em;
-  margin: 0;
-  font-family: Calibri;
-}
-
-.section-title-text {
-  color: #ccd6f6;
-  font-size: 2.2em;
-  margin: 0;
-  font-family: Calibri;
-}
-
-.about-text {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-right: 47em;
-  font-family: Calibri;
-  margin-bottom: 1em;
-}
-
-.about-me {
-  display: flex;
-  flex-direction: column;
-  margin-right: 19.7em;
-  justify-content: left;
-  width: 30%;
-  font-size: 1.2em;
-  color: #b6c0dc;
+section > div > h4 {
+  color: #b3b9cd;
+  font-size: 1vmax;
+  margin-top: 1em;
   line-height: 1.5em;
 }
 
-.about-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  margin-left: -2em;
+.about {
+  width: 100%;
 }
 
-ol {
-  list-style: none;
+.txt {
+  display: table;
+  margin: 0 auto;
+  text-align: left;
 }
 
-ol li::before {
-  content: "\2023";
+.github {
+  background-color: none;
+  border: solid 3px #2a9d8f;
+  border-radius: 15px;
   color: #2a9d8f;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
+  padding: 1em;
+  margin-top: 2em;
 }
-
-#cs50 {
-  color: #2a9d8f;
-}
-#cs50:hover {
-  color: #70b3ab;
-}
-
-.photo-perfil {
-  width: 350px;
-  height: 350px;
-  float: right;
-  position: relative;
-  right: 26em;
-  bottom: 26em;
-  border-radius: 20px;
-}
-
-@keyframes disappearAndAppear {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideFromAbove {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-@keyframes slideFromAbove2 {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
+.github:hover {
+  background-color: #50cebf;
 }

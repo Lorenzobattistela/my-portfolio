@@ -5,132 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lorenzo Battistela</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
   </head>
   <body>
-    <header style="transition-delay: 200ms">
-      <div>
-        <a href="index.html"><img src="/images/l.png" alt="logo" /></a>
-      </div>
-      <ul>
-        <a href="#about"
-          ><span class="menu-numbers">01. </span
-          ><span class="menu-text">About</span></a
+    <header class="header">
+      <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">
+          <img src="images/l.png" alt="logo" />
+        </a>
+        <button
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-target="#navbar"
+          data-toggle="collapse"
+          type="button"
+          data-bs-toggle="collapse"
         >
-        <a href="#experience"
-          ><span class="menu-numbers">02. </span
-          ><span class="menu-text">Experience</span></a
-        >
-        <a href="#work"
-          ><span class="menu-numbers">03. </span
-          ><span class="menu-text">Work</span></a
-        >
-        <a href="#contact"
-          ><span class="menu-numbers">04. </span
-          ><span class="menu-text">Contact</span></a
-        >
-        <a href="images/curriculo.pdf" download="curriculo"
-          ><button class="menu-button">Resume</button></a
-        >
-      </ul>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse nav-flex" id="navbar">
+          <ul class="navbar-nav mr-auto mt-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="images/curriculo.pdf" download
+                ><button class="btn resume">Resume</button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-      <section class="presentation" id="presentation">
-        <div class="text">
-          <p id="text_one">Hi, my name is</p>
-          <p id="text_two">Lorenzo Battistela.</p>
-          <p id="text_three">I build machine learning models.</p>
-          <p id="text_four">
-            I’m a software developer focusing on machine learning development
-            (and ocasionally building websites). Currently focused on learning
-            and deepening in AI studies.
-          </p>
-          <a target="blank" href="https://github.com/Lorenzobattistela"
-            ><button id="github_button">Check out my github!</button></a
+      <section class="about container-sm">
+        <div class="txt">
+          <h3>Hi, my name is</h3>
+          <h1 class="name">Lorenzo Battistela.</h1>
+          <h1 class="desc">I build machine learning models.</h1>
+          <h4>
+            I’m a software developer focusing on machine
+            <br />learning development (and ocasionally building websites).
+            <br />
+            Currently focused on learning and deepening in AI studies.
+          </h4>
+          <a href="https://github.com/Lorenzobattistela"
+            ><button class="btn github">Check out my github</button></a
           >
         </div>
       </section>
-
-      <div class="social-media-wrapper">
-        <ul>
-          <li>
-            <a href="https://github.com/Lorenzobattistela" target="blank"
-              ><img src="images/Vector.png"
-            /></a>
-          </li>
-          <li>
-            <a href="https://instagram.com/lorenzo_wb" target="blank"
-              ><img src="images/Vector(1).png"</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/lorenzo-battistela/"
-              target="blank"
-              ><img src="images/Vector(3).png"
-            /></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/Lorenzoowb" target="blank"
-              ><img src="images/Vector(2).png"
-            /></a>
-          </li>
-          <li><img id="line" src="images/Line 1.png"</li>
-        </ul>
-      </div>
-
-      <div class="email-wrapper">
-        <ul>
-          <li>
-            <a class="mail" href="mailto:lorenzowbdev@gmail.com"
-              >lorenzowbdev@gmail.com</a
-            >
-          </li>
-          <li><img id="line-right" src="images/Line 1.png" /></li>
-        </ul>
-      </div>
-
-      <section class="about" id="about">
-        <div class="about-text">
-          <div>
-            <span class="section-title-num">01. </span
-            ><span class="section-title-text">About me</span>
-          </div>
-        </div>
-        <div class="about-me">
-          <p>
-            Hello! My name is Lorenzo and I enjoy building machine learning
-            models and building things on the web. My interest started back in
-            2019, when I watched a video talking about hacking. Turns out that
-            watching a lot of videos after that lead me to programming content!
-          </p>
-          <p>
-            Fast forward to today, and I've had the privilege of learning at
-            <a id="cs50" href="https://cs50.harvard.edu/x/2021/" target="blank"
-              >cs50</a
-            >
-            and working in freelance web projects. My main focus today is
-            building machine learning things and learning more and more.
-          </p>
-          <p>Here are a few technologies I've been working on recently:</p>
-
-          <div class="about-list">
-            <ol>
-              <li>Python</li>
-              <li>Flask</li>
-              <li>C</li>
-            </ol>
-            <ol>
-              <li>Data Structures</li>
-              <li>Algorithms</li>
-              <li>Machine Learning</li>
-            </ol>
-          </div>
-        </div>
-      </section>
-      <div>
-        <img class="photo-perfil" src="images/FOTO PERFIL.jpeg" />
-      </div>
     </main>
   </body>
 </html>
