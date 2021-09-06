@@ -18,7 +18,7 @@ body {
 }
 
 nav {
-  margin-bottom: 10em;
+  margin-bottom: 10vmax;
 }
 
 .navbar-toggler {
@@ -49,7 +49,7 @@ section > div > h1.desc {
   font-size: 3vmax;
 }
 
-section > div > h4 {
+section > div > h3.me {
   color: #b3b9cd;
   font-size: 1vmax;
   margin-top: 1em;
