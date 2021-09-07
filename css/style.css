@@ -8,7 +8,7 @@ body {
 }
 
 .header {
-  background-color: #212529;
+  background-color: #264653;
 }
 .navbar-nav {
   display: flex !important;
@@ -73,7 +73,48 @@ section > div > h3.me {
   color: #2a9d8f;
   padding: 1em;
   margin-top: 2em;
+  font-size: 1vmax;
 }
 .github:hover {
   background-color: #50cebf;
+}
+
+.section-title {
+  color: #ccd6f6;
+  font-size: 3vmax;
+  margin-bottom: 1em;
+}
+
+.about-me {
+  width: 100%;
+  margin-top: 12vmax;
+}
+
+section > div > h3 {
+  color: #b3b9cd;
+  font-size: 1vmax;
+}
+
+.profile {
+  width: 20vmax;
+  height: 20vmax;
+  float: right;
+  margin-right: -15vmax;
+  border-radius: 2000px;
+}
+.profile-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    display: none;
+  }
+  .profile-mobile {
+    display: block;
+    height: 20vmax;
+    width: 20vmax;
+    border-radius: 2000px;
+    margin-left: 5em;
+  }
 }
