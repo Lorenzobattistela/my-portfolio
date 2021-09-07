@@ -119,7 +119,7 @@ section > div > h3 {
   }
 }
 
-.exp {
+.tit {
   margin-top: 10vmax;
 }
 
@@ -160,4 +160,73 @@ section > div > h4 > span {
 
 .chart-button:hover {
   color: #2a9d8f;
+}
+
+.work {
+  margin-bottom: 10vmax;
+}
+
+.ttt-ai {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description-card {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  background-color: #233554;
+  padding: 1.5em;
+  border-radius: 5px;
+}
+
+.featured {
+  color: #2a9d8f;
+}
+
+.project-title {
+  color: #ccd6f6;
+}
+
+.project-text {
+  color: #b3b9cd;
+}
+
+.project-image {
+  width: 30vmax;
+  height: 20vmax;
+  margin-right: 1vmax;
+}
+
+footer {
+  width: 100%;
+}
+
+.contact {
+  display: table;
+  margin: 0 auto;
+}
+
+.mail {
+  background-color: none;
+  border: solid 3px #2a9d8f;
+  border-radius: 15px;
+  color: #2a9d8f;
+  padding: 1em;
+  font-size: 1vmax;
+  margin-bottom: 2em;
+}
+
+.mail:hover {
+  background-color: #50cebf;
+  color: #2a9d8f;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.icon-link {
+  margin: 3vmax 2vmax 3vmax 2vmax;
 }
