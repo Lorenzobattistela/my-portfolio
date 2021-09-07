@@ -51,12 +51,16 @@ section > div > h1.desc {
 
 section > div > h3.me {
   color: #b3b9cd;
-  font-size: 1vmax;
+  font-size: 1.5vmax;
   margin-top: 1em;
   line-height: 1.5em;
 }
 
-.about {
+section > div > h4 {
+  color: #b3b9cd;
+}
+
+.main {
   width: 100%;
 }
 
@@ -74,6 +78,7 @@ section > div > h3.me {
   padding: 1em;
   margin-top: 2em;
   font-size: 1vmax;
+  margin-bottom: 10vmax;
 }
 .github:hover {
   background-color: #50cebf;
@@ -85,21 +90,16 @@ section > div > h3.me {
   margin-bottom: 1em;
 }
 
-.about-me {
-  width: 100%;
-  margin-top: 12vmax;
-}
-
 section > div > h3 {
   color: #b3b9cd;
-  font-size: 1vmax;
+  font-size: 1.5vmax;
 }
 
 .profile {
   width: 20vmax;
   height: 20vmax;
   float: right;
-  margin-right: -15vmax;
+  margin-right: -10vmax;
   border-radius: 2000px;
 }
 .profile-mobile {
@@ -117,4 +117,47 @@ section > div > h3 {
     border-radius: 2000px;
     margin-left: 5em;
   }
+}
+
+.exp {
+  margin-top: 10vmax;
+}
+
+.experience {
+  display: flex;
+  margin-bottom: 10vmax;
+}
+
+.chart > ul {
+  list-style-type: none;
+  border-left: solid;
+  color: #b3b9cd;
+}
+
+section > div > h4 > span {
+  color: #2a9d8f;
+}
+
+#free {
+  display: block;
+  color: #b3b9cd;
+}
+
+#black {
+  display: none;
+  color: #b3b9cd;
+}
+
+.freelancer {
+  margin-left: 4vmax;
+}
+
+.chart-button {
+  color: #b3b9cd;
+  background-color: #264653;
+  border: none;
+}
+
+.chart-button:hover {
+  color: #2a9d8f;
 }

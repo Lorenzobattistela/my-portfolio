@@ -24,6 +24,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -67,8 +68,8 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section class="about container-sm">
+    <main class="main container-sm">
+      <section>
         <div class="txt">
           <h3>Hi, my name is</h3>
           <h1 class="name">Lorenzo Battistela.</h1>
@@ -81,10 +82,7 @@
           <a href="https://github.com/Lorenzobattistela"
             ><button class="btn github">Check out my github</button></a
           >
-        </div>
-      </section>
-      <section class="about-me container-sm" id="about">
-        <div class="txt">
+
           <h1 class="section-title">About me</h1>
           <img class="profile" src="images/FOTO PERFIL.jpeg" />
           <h3>
@@ -107,6 +105,32 @@
             practice projects for applying my knowledge.
           </h3>
           <img class="profile-mobile" src="images/FOTO PERFIL.jpeg" />
+      </section>
+      <h1 class="section-title exp">Experience</h1>
+      <section class="experience">
+        <div class="chart">
+          <ul>
+            <button class="chart-button" onclick="showContent('free')"><li>Freelancer</li></button>
+            <br />
+            <button class="chart-button" onclick="showContent('black')"><li>Black Saturn Studios</li></button>
+          </ul>
+        </div>
+        <div class="freelancer" id="free">
+          <h4>Web developer <span>@ Freelancer</span></h4>
+          <p>August 2019 - January 2020</p>
+          <ul>
+            <li>Write modern, mantainable and performant code for clients and their projects.</li>
+            <li>Work with a variety of different languages and frameworks, such as Python, Flask, HTML and CSS, JavaScrpit, Bootstrap, Netlify and Heroku</li>
+            <li>Communicate with clients and understand their needs.</li>
+          </ul>
+        </div>
+        <div class="freelancer" id="black">
+          <h4>Web developer <span>@ Black Saturn Studios</span></h4>
+          <p>September 2021 - Present</p>
+          <ul>
+            <li>Communicate with teams and managers.</li>
+            <li>In progress...</li>
+          </ul>
         </div>
       </section>
     </main>
