@@ -1,3 +1,8 @@
+* {
+  scroll-behavior: smooth;
+  transition-delay: 100ms;
+}
+
 body {
   background-color: #264653;
 }
@@ -9,6 +14,7 @@ body {
 
 .header {
   background-color: #264653;
+  animation: 2s ease-in-out 0s 1 slideFromAbove;
 }
 .navbar-nav {
   display: flex !important;
@@ -58,6 +64,10 @@ section > div > h3.me {
 
 section > div > h4 {
   color: #b3b9cd;
+}
+
+.my-section {
+  animation: 3s ease-in-out 0s 1 disappearAndAppear;
 }
 
 .main {
@@ -116,6 +126,19 @@ section > div > h3 {
     width: 20vmax;
     border-radius: 2000px;
     margin-left: 5em;
+    margin-top: 3em;
+  }
+
+  .project-image {
+    display: none;
+  }
+
+  .item {
+    font-size: 1.7vmax;
+  }
+
+  .job-title {
+    font-size: 2.3vmax;
   }
 }
 
@@ -229,4 +252,32 @@ footer {
 }
 .icon-link {
   margin: 3vmax 2vmax 3vmax 2vmax;
+}
+
+@keyframes slideFromAbove {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideFromAbove2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes disappearAndAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
