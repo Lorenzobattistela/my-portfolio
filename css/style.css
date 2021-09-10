@@ -156,6 +156,11 @@ section > div > h3 {
   }
 }
 
+.link {
+  color: #ccd6f6;
+  text-decoration: underline;
+}
+
 .tit {
   margin-top: 10vmax;
 }
