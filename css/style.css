@@ -129,6 +129,10 @@ section > div > h3 {
     margin-top: 3em;
   }
 
+  .ttt-ai {
+    margin-top: 1em;
+  }
+
   .project-image {
     display: none;
   }
@@ -212,6 +216,7 @@ section > div > h4 > span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1em;
 }
 
 .description-card {
